@@ -1,8 +1,38 @@
 @import "base-styles.css";
+@import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,400italic);
-
+/*Variables*/
+@font-colour:#fff;
 body{
 	font-family: 'Roboto', sans-serif;
 	line-height: 24px;
 	font-size:16px;
 }
+.title{
+	color:yellow;
+}
+.before{
+	
+	display: block;
+	text-indent: -9999px;
+	width: 100px;
+	height: 82px;
+	background: url("../image/SPI-logo.svg");
+	background-size: 100px 82px;
+	
+}
+.inner{
+	width:1200px;
+}
+* {
+    /* -webkit-box-sizing: border-box; */
+    /* -moz-box-sizing: border-box; */
+    box-sizing: initial;
+}
+a{
+	&:hover{
+		color:@font-colour;
+		text-decoration:none;
+	}
+}
+
