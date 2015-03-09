@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,400italic);
 /*Variables*/
 @font-colour:#fff;
+@navbar-bk-colour:#0977bc;
 body{
 	font-family: 'Roboto', sans-serif;
 	line-height: 24px;
@@ -35,4 +36,34 @@ a{
 		text-decoration:none;
 	}
 }
-
+.dropdown{
+	.subNavBtn {
+		display: block;
+		height: 20px;
+		width: 10%;
+		float: left;
+		margin: 0px 0px 0 0;
+		text-decoration: none;
+		font-size: 14px;
+		padding: 15px 2% 15px 2%;
+		text-align: center;
+		border:0;
+		color: #fff;
+		background:@navbar-bk-colour;
+	}
+	button:hover {
+		background: #1783c7;
+	}
+}
+.spi-dropdown-menu{
+	position: absolute;
+	top: 50px;
+	left: 175px;
+}
+.s1{
+	height:600px;
+}
+.section{
+	max-width: initial;
+	min-width: initial;
+}

@@ -7,7 +7,7 @@
 
 
 <link href="css/styles.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script	src="js/jquery.smint.js" type="text/javascript" ></script>
@@ -39,7 +39,18 @@ $(document).ready( function() {
 	<div class="subMenu" >
 	 	<div class="inner">
 	 		<a href="#sTop" class="subNavBtn">Home</a>
-	 		<a href="#s1" class="subNavBtn">The SPI Initiative</a> 
+			<div class="dropdown">
+				<button class="subNavBtn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" 				aria-expanded="true">
+			 	  The SPI Initiative
+			 	  <span class="caret"></span>
+			 	</button>
+			 	<ul class="dropdown-menu spi-dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			 	  	<li role="presentation"><a href="#s1">Software Improvement - Home</a> </li>
+			 	  	<li role="presentation"><a href="#s1-1">Introduction</a></li>
+			 	 	<li role="presentation"><a href="#s1-2">Defect Elimination</a></li>
+			 	   	<li role="presentation"><a href="#s5">Section 5</a></li>
+			 	</ul>
+			</div>
 			<a href="#s2" class="subNavBtn">Section 2</a>
 			<a href="#s3" class="subNavBtn">Section 3</a>
 			<a href="#s4" class="subNavBtn">Section 4</a>
@@ -51,10 +62,26 @@ $(document).ready( function() {
 	<div class="section s1">
 		<div class="inner ">
 			<div class="s1-1">
-			<h1>SPI Initiative</h1>
-			<p>
-					Software development is the lifeblood here at HealthCare Solutions. As a company with over 100 employees 					developing state of the art IT systems which are being used right across the health care sector in Ireland, it is 					vital that our products are largely defect free and any existing defects are tracked and dealt with promptly. At the 					present moment this company lacks a well  defined, uniform process for handling defects. As the software quality 					assonance officer, I propose that we embark on a software process improvement initiative which will see the 					implementation of <b>Formal Technical Reviews</b>. The aims of implimemting this initiative is to develop an 					effective system for <b>Defect Elimination</b>
+				<h1>SPI Initiative</h1>
+				<p>
+					Software development is the lifeblood here at HealthCare Solutions. As a company with over 100 employees 					developing state of the art IT systems which are being used right across the health care sector in Ireland, it is 					vital that our products are largely defect free and any existing defects are tracked and dealt with promptly. At 					the present moment this company lacks a well  defined, uniform process for handling defects. As the software 					quality assonance officer, I propose that we embark on a software process improvement initiative which will see the 					implementation of <b>Formal Technical Reviews</b>. The aims of implementing this initiative is to develop an 					effective system for <b>Defect Elimination</b>
 				</P>
+			</div>
+			<div class="s1-2">
+				<h2>Defect Elmination</h2>
+				<p>
+					The first part of this SPI initiative is to understand what defect elimination is. Defect elimination is where we focuses on preventing defects from emerging within a system, and if they do make their into a system then we have procedures in place for detecting and removing them from the system.
+				</p>
+				<p>
+					In order for us to prevent defects from appearing within a system we will need to ensure that our developers are at an adequate level of competence and experience within their chosen field of expertise.  Having the right software processes like agile or extreme development in place will also help us to prevent defects in our products. Furthermore the management and product leads will also need to pay their part in ensuring that project requirements, targets, and deadlines are clear and feasible.
+				</p>
+				<p>
+					When defects get into a system, and it&#146;s only a question of when and how many, we must ensure that we have sufficient detection and removal process in place. Examples of detecting defects in software is to have walkthroughs, formal reviews and inspections. In order to ensure that such defects are removed we must continuously test and debug our software.
+					
+				</p>
+			</div>
+			<div class="s1-3">
+				
 			</div>
 		</div>
 	</div>
