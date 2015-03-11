@@ -11,6 +11,7 @@
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script	src="js/jquery.smint.js" type="text/javascript" ></script>
+<script	src="js/javascript.js" type="text/javascript" ></script>
 
 <script type="text/javascript">
 	
@@ -61,27 +62,82 @@ $(document).ready( function() {
 
 	<div class="section s1">
 		<div class="inner ">
-			<div class="s1-1">
-				<h1>SPI Initiative</h1>
-				<p>
-					Software development is the lifeblood here at HealthCare Solutions. As a company with over 100 employees 					developing state of the art IT systems which are being used right across the health care sector in Ireland, it is 					vital that our products are defect free and any existing defects are tracked and dealt with promptly. At 					the present moment this company lacks a well  defined, uniform process for handling defects. As the software 					quality assonance officer, I propose that we embark on a software process improvement initiative which will see the 					implementation of <b>Formal Technical Reviews</b>. The aims of implementing this initiative is to develop an 					effective system for <b>Defect Elimination</b>
-				</P>
-			</div>
-			<div class="s1-2">
-				<h2>Defect Elmination</h2>
-				<p>
-					The first part of this SPI initiative is to understand what defect elimination is. Defect elimination is where we focuses on preventing defects from emerging within a system, and if they do make their into a system then we have procedures in place for detecting and removing them from the system.
-				</p>
-				<p>
-					In order for us to prevent defects from appearing within a system we will need to ensure that our developers are at an adequate level of competence and experience within their chosen field of expertise.  Having the right software processes like agile or extreme development in place will also help us to prevent defects in our products. Furthermore the management and product leads will also need to pay their part in ensuring that project requirements, targets, and deadlines are clear and feasible.
-				</p>
-				<p>
-					When defects get into a system, and it&#146;s only a question of when and how many, we must ensure that we have sufficient detection and removal process in place. Examples of detecting defects in software is to have walkthroughs, formal reviews and inspections. In order to ensure that such defects are removed we must continuously test and debug our software.
-					
-				</p>
-			</div>
-			<div class="s1-3">
+			<div class="overview col-md-4 ">
+				<h1>SPI Initiative Ovierview</h1>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-primary">
+				    <div class="panel-heading" role="tab" id="s1-overview-1-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#s1-overview-1" aria-expanded="true" aria-controls="s1-overview-1">
+				          The Initiative
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="s1-overview-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="s1-overview-1-heading">
+				      <div class="panel-body">
+				       The proposal that we embark on a software process improvement initiative which will see the implementation of Formal Technical Reviews.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-info">
+				    <div class="panel-heading" role="tab" id="s1-overview-2-heading">
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#s1-overview-2" aria-expanded="false" aria-controls="s1-overview-2">
+				          Defect Definition
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="s1-overview-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="s1-overview-2-heading">
+				      <div class="panel-body">
+						A flaw or imperfection in a software products or software process, or any occurrence in a work product that is determined to be incomplete, incorrect or missing. It can also be described  as an instance in which a requirement is not satisfied.
+				      </div>
+				    </div>
+				  </div>
+	  			  <div class="panel panel-info">
+	  			    <div class="panel-heading" role="tab" id="s1-overview-3-heading">
+	  			      <h4 class="panel-title">
+	  			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#s1-overview-3" aria-expanded="false" aria-controls="s1-overview-3">
+	  			          Technical Review
+	  			        </a>
+	  			      </h4>
+	  			    </div>
+	  			    <div id="s1-overview-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="s1-overview-3-heading">
+	  			      <div class="panel-body">
+						A review is a critical examination or evaluation of a work product or process by qualified individuals or teams. 
+	  			      </div>
+	  			    </div>
+	  			  </div>
+	  				</div>
+				</div><!-- End of panel group -->
+			<div id="main-body" class="col-md-7 pull-right">
+				<div class="s1-1">
+					<h1>SPI Initiative</h1>
+					<p>
+						Software development is the lifeblood here at HealthCare Solutions. As a company with over 100 employees developing state of the art IT systems which are being used right across the health care sector in Ireland, it is vital that our products are defect free and any existing defects are tracked and dealt with promptly. At the present moment this company lacks a well  defined, uniform process for handling defects. As the software quality assonance officer, I propose that we embark on a software process improvement initiative which will see the implementation of <b>Formal Technical Reviews</b>. The aims of implementing this initiative is to develop an effective system for <b>Defect Elimination</b>
+					</P>
+				</div>
 				
+				<div class="s1-2">
+					<h2>Defects</h2>
+					<p>
+						Part of this SPI initiative is to detect and eliminate defects found within our software. Defect elimination is where we focuses on preventing defects from emerging within a system, and if they do make their into a system then we have procedures in place for detecting and removing them from the system.
+					</p>
+					<p>
+						In order for us to prevent defects from appearing within a system we will need to ensure that our developers are at an adequate level of competence and experience within their chosen field of expertise.  Having the right software processes like agile or extreme development in place will also help us to prevent defects in our products. Furthermore the management and product leads will also need to pay their part in ensuring that project requirements, targets, and deadlines are clear and feasible.
+					</p>
+					<p>
+						When defects get into a system, and it&#146;s only a question of when and how many, we must ensure that we have sufficient detection and removal process in place. Examples of detecting defects in software is to have walkthroughs, formal reviews and inspections. In order to ensure that such defects are removed we must continuously test and debug our software.
+					
+					</p>
+					<p>
+						There are several reasons as to why we should. Having an idea what type of bugs and how much time we should be putting into detecting and removing them will determine not only the progress being made on a project, but also the quality of the software, and development of best practices that will increase process performance and capabilities of the software products. Furthermore analysing defects will allow us to better differentiate on whether a defect is minor or major.  It is however important that we keep in mind that most techniques used in planning rely on historical data.
+				</div>
+				<div class="s1-3">
+					<h2>Technical Reviews</h2>
+					<p>
+						Reviews have been shown to be more effective than testing in ensuring that programs are error-free. They can also, be used on products which cannot be tested, such as specifications, designs, documentation, text plan,etc.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -53,9 +53,20 @@ a:hover {
   left: 175px;
 }
 .s1 {
-  height: 600px;
+  height: 1200px;
 }
 .section {
   max-width: initial;
   min-width: initial;
+}
+.panel-body {
+  color: #333;
+}
+.row {
+  margin-right: initial;
+  margin-left: initial;
+}
+.sticky {
+  position: fixed;
+  top: 75px;
 }
