@@ -53,11 +53,18 @@ a:hover {
   left: 175px;
 }
 .s1 {
-  height: 1200px;
+  height: 1900px;
+  background: #006288;
+}
+.s2 {
+  color: #ffffff;
+  height: 1900px;
+  background: #af2c0e;
 }
 .section {
   max-width: initial;
   min-width: initial;
+  z-index: 0;
 }
 .panel-body {
   color: #333;
@@ -69,4 +76,17 @@ a:hover {
 .sticky {
   position: fixed;
   top: 75px;
+  overflow-y: auto;
+  -webkit-transition: top 0.3s;
+  /* For Safari 3.1 to 6.0 */
+  transition: top 0.3s;
+}
+.rebalance-main-content {
+  bottom: 400px;
+}
+.disappear {
+  display: none;
+}
+.list-balance {
+  margin-left: 20px;
 }

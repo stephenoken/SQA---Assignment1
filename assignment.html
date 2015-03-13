@@ -48,8 +48,9 @@ $(document).ready( function() {
 			 	<ul class="dropdown-menu spi-dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 			 	  	<li role="presentation"><a href="#s1">Home</a> </li>
 			 	  	<li role="presentation"><a href="#s1-1">Introduction</a></li>
-			 	 	<li role="presentation"><a href="#s1-2">Defect Elimination</a></li>
-			 	   	<li role="presentation"><a href="#s5">Section 5</a></li>
+			 	 	<li role="presentation"><a href="#s1-2">Defects</a></li>
+			 	   	<li role="presentation"><a href="#s1-3">Technical Review</a></li>
+					<li role="presentation"><a href="#s1-4">How Review Work</a></li>
 			 	</ul>
 			</div>
 			<a href="#s2" class="subNavBtn">Section 2</a>
@@ -60,56 +61,86 @@ $(document).ready( function() {
 		</div>
 	</div>
 
-	<div class="section s1">
+	<div id="s-1"class="section s1 rebalance-s1-height">
 		<div class="inner ">
-			<div class="overview col-md-4 ">
-				<h1>SPI Initiative Ovierview</h1>
+			<div id="overview-1" class="col-md-4 ">
+				<h3>SPI Initiative Ovierview</h3>
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-				  <div class="panel panel-primary">
-				    <div class="panel-heading" role="tab" id="s1-overview-1-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#s1-overview-1" aria-expanded="true" aria-controls="s1-overview-1">
-				          The Initiative
-				        </a>
-				      </h4>
-				    </div>
-				    <div id="s1-overview-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="s1-overview-1-heading">
-				      <div class="panel-body">
-				       The proposal that we embark on a software process improvement initiative which will see the implementation of Formal Technical Reviews.
-				      </div>
-				    </div>
-				  </div>
-				  <div class="panel panel-info">
-				    <div class="panel-heading" role="tab" id="s1-overview-2-heading">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#s1-overview-2" aria-expanded="false" aria-controls="s1-overview-2">
-				          Defect Definition
-				        </a>
-				      </h4>
-				    </div>
-				    <div id="s1-overview-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="s1-overview-2-heading">
-				      <div class="panel-body">
-						A flaw or imperfection in a software products or software process, or any occurrence in a work product that is determined to be incomplete, incorrect or missing. It can also be described  as an instance in which a requirement is not satisfied.
-				      </div>
-				    </div>
-				  </div>
-	  			  <div class="panel panel-info">
-	  			    <div class="panel-heading" role="tab" id="s1-overview-3-heading">
-	  			      <h4 class="panel-title">
-	  			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#s1-overview-3" aria-expanded="false" aria-controls="s1-overview-3">
-	  			          Technical Review
-	  			        </a>
-	  			      </h4>
-	  			    </div>
-	  			    <div id="s1-overview-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="s1-overview-3-heading">
-	  			      <div class="panel-body">
-						A review is a critical examination or evaluation of a work product or process by qualified individuals or teams. 
-	  			      </div>
-	  			    </div>
-	  			  </div>
-	  				</div>
-				</div><!-- End of panel group -->
-			<div id="main-body" class="col-md-7 pull-right">
+   				  <div class="panel panel-primary"><!--Start of accordion-->
+   				    <div class="panel-heading" role="tab" id="s1-overview-1-heading">
+   				      <h4 class="panel-title">
+   				        <a data-toggle="collapse" data-parent="#accordion" href="#s1-overview-1" aria-expanded="true" aria-controls="s1-overview-1">
+   				          The Initiative
+   				        </a>
+   				      </h4>
+   				    </div>
+   				    <div id="s1-overview-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="s1-overview-1-heading">
+   				      <div class="panel-body">
+   				       The proposal that we embark on a software process improvement initiative which will see the implementation of Formal Technical Reviews.
+   				      </div>
+   				    </div>
+   				  </div><!--End of accordion-->
+   				  <div class="panel panel-info"><!--Start of accordion-->
+   				    <div class="panel-heading" role="tab" id="s1-overview-2-heading">
+   				      <h4 class="panel-title">
+   				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#s1-overview-2" aria-expanded="false" aria-controls="s1-overview-2">
+   				          Defect Definition
+   				        </a>
+   				      </h4>
+   				    </div>
+   				    <div id="s1-overview-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="s1-overview-2-heading">
+   				      <div class="panel-body">
+   						A flaw or imperfection in a software products or software process, or any occurrence in a work product that is determined to be incomplete, incorrect or missing. It can also be described  as an instance in which a requirement is not satisfied.
+   				      </div>
+   				    </div>
+   				  </div><!--End of accordion-->
+     	  			  <div class="panel panel-info"><!--Start of accordion-->
+     	  			    <div class="panel-heading" role="tab" id="s1-overview-3-heading">
+     	  			      <h4 class="panel-title">
+     	  			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#s1-overview-3" aria-expanded="false" aria-controls="s1-overview-3">
+     	  			          Technical Review
+     	  			        </a>
+     	  			      </h4>
+     	  			    </div>
+     	  			    <div id="s1-overview-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="s1-overview-3-heading">
+     	  			      <div class="panel-body">
+     						A review is a critical examination or evaluation of a work product or process by qualified individuals or teams. 
+     	  			      </div>
+     	  			    </div>
+     	  			  </div><!--End of accordion-->
+       	  			  <div class="panel panel-info"><!--Start of accordion-->
+       	  			    <div class="panel-heading" role="tab" id="s1-overview-4-heading">
+       	  			      <h4 class="panel-title">
+       	  			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#s1-overview-4" aria-expanded="false" aria-controls="s1-overview-4">
+       	  			          Why Technical Review
+       	  			        </a>
+       	  			      </h4>
+       	  			    </div>
+       	  			    <div id="s1-overview-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="s1-overview-4-heading">
+       	  			      <div class="panel-body">
+  							67% of all defects are found upon inspection, and the number of faults found 7 months after product release are around 38% fewer. 
+       	  			      </div>
+       	  			    </div>
+       	  			  </div>
+       	  			<div class="panel panel-info"><!--Start of accordion-->
+       	  				<div class="panel-heading" role="tab" id="s1-overview-5-heading">
+       	  			      <h4 class="panel-title">
+       	  			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#s1-overview-5" aria-expanded="false" aria-controls="s1-overview-5">
+       	  			          How Reviews Work
+       	  			        </a>
+       	  			      </h4>
+       	  			    </div>
+       	  			    <div id="s1-overview-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="s1-overview-5-heading">
+       	  			      <div class="panel-body">
+  							There are many variations on how technical reviews work, and at a high level this review initiative will use a range of methods from simple walkthroughs, to formal technical review, to inspections.
+       	  			      </div>
+       	  			    </div>
+       	  			  </div><!--End of accordion-->
+       	  			</div><!-- End of panel group -->
+  	  			</div>
+				                                     
+			</div>
+			<div id="main-body-1" class="col-md-7 pull-right">
 				<div class="s1-1">
 					<h1>SPI Initiative</h1>
 					<p>
@@ -137,16 +168,104 @@ $(document).ready( function() {
 					<p>
 						Reviews have been shown to be more effective than testing in ensuring that programs are error-free. They can also, be used on products which cannot be tested, such as specifications, designs, documentation, text plan,etc.
 					</p>
+					<p>
+					It is a widely held belief that inspections are far more effective at discovering defects in a product, and that products that are inspected tend to have far fewer defects. According to Falon, 67% of all defects are found upon inspection, and the number of faults found 7 months after product release are around 38% fewer.	
+					</p>
+					<p>
+						By detecting and correcting defects early, it can help to substantially reduce HealthCare Solutions&#146;s cost of subsequent steps in the development and maintenance phases.
+					</p>
+						<h4>Undertaking this initiative we need to be aware of the core concepts which underpin reviews.</h4>
+					<ul class="list-balance">
+						<li>Keep in mind the objectives to these reviews.</li>
+						<li>These reviews are to find specific kinds of errors.</li>
+						<li>They are to verify that the software meets the requirements.</li>
+						<li>The software conforms to the standards set down by healthCare Solutions.</li>
+						<li>To sign off on a fully completed stage in the development of a project.</li>
+						<li>To produce more maintainable software.</li>	
+						<li>Reviews are not meant to correct the work product, or to accuse the developer of incompetence or failure. These reviews must be objective in nature.,</li>
+
+					</ul>
+				</div>
+				<div class="s1-4">
+					<h2>How Reviews Work</h2>
+					<p>
+						Generic technical reviews can be broken down into three distinct methods. Each has method has associated goals and typical attributes. 
+					</p>
+					<p>
+						For example, walkthroughs are used to achieve a low cost way in getting either new developers up to speed on a project or to quickly change the direction of the project. Walkthroughs also, have a tendency to be very informal, unmeasurable and have very little preparation work behind them. 
+					</p>
+					<p>
+						Formal technical reviews, on the other hand, are used for developing requirements for a project as well as trying remove any existing ambiguity already present in the requirements. Furthermore these technical reviews can be used to provide a more structured way of training staff on a project. Given the name of this method, these reviews follow a more formal  process, with a more developed presentation, as well as providing a platform for a wide range discussions relating to the the review.
+					</p>
+					<p>
+						The final method is inspections. Inspections are a visual examination of a software product to detect and identify software anomalies, which range from errors to deviations from the standards and specifications set down by this firm. 
+					</p>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 
-	<div class="section s2">
+	<div class="section s2" >
 		<div class="inner">
-			<h1>Section 2</h1>
-			<p><a href="#s4" class="intLink">Internal Link: Jump to Section 4</a></p>
-			<p><a href="#sTop" class="intLink">Internal Link: Back to Top</a></p>
+			<div id="overview-2" class="col-md-4 ">
+				<h3>SPI Initiative Ovierview</h3>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+     				<div class="panel panel-primary"><!--Start of accordion-->
+     				    <div class="panel-heading" role="tab" id="s2-overview-1-heading">
+     				      <h4 class="panel-title">
+     				        <a data-toggle="collapse" data-parent="#accordion" href="#s2-overview-1" aria-expanded="true" aria-controls="s2-overview-1">
+							  How reviews improve the quality of  our software?
+     				        </a>
+     				      </h4>
+     				    </div>
+     				    <div id="s2-overview-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="s2-overview-1-heading">
+     				      <div class="panel-body">
+								   <p>The first is that reviews will help improve the scheduling performance.</p>
+								   <p>Are the most proactive form of tests</p>
+								   <p>Provide ideal training opportunities to staff</p>
+     				      </div>
+     				    </div>
+     				</div><!--End of accordion-->
+				</div><!--Panel Gorup-->
+			</div>
+			<div id="main-body-2" class="col-md-7 pull-right">
+				<div class="2-1">
+					<h1>Improvements to our Software</h1>
+					<p>
+						Implementing Formal Technical Reviews will greatly improve the quality of the software that is being developed here at HealthCare Solutions. By implementing reviews in throughout our development process, it will yield several key benefits that will improve how we develop our software.
+					</p>
+					<h2>Project Development</h2>
+					<p>
+						The first benefit is that reviews will help improve the scheduling performance, as the various methods of review will uncover defects. They&#146;ll also reduce the amount of rework, which typically accounts for 44% of the development cost. 
+					</p>
+					<p>
+
+						These reviews will help uncover 60-100% of defects within a project. Not only will we be able to put into production software that simple works and on schedule, but, over time the costs  and time associated with maintaining that software will be much more economical. This is because the earlier that defects are detected, the cheaper they are to remove. And this could be 10-100 times cheaper. 
+					</p>
+					<p>
+						Reviews are the most proactive form of tests, in that they uncover defects that would not otherwise be picked up by tests.
+					</p>
+					<p>
+						By conducting a formal technical review of a project or product the author of that review will be able collect information about defects that exist within the project. Simply having  the author know about the defects within a project will allow testers and other developers to be able to categorise the defects and remove them as needed. Furthermore a  technical review will help collect all the information about the project, its purpose and progress, and allow interested parties, like management, get a better feel for the project.
+					</p>
+				</div>
+				<div class="2-2">
+					<h2>Developers</h2>
+					<p>
+						By having developers review each others code, this can have an impact on morale. This impact can be either negative or positive. Therefore it is important that developers view reviews as an opportunity to gain visibility and recognition of their work as opposed to an intrusion of their workplace. Essentially we hope to create a situation where by the developers communicate more often with each other. The benefit here, is that we can develop a team mentality within the developers. Which will improve morale, work satisfaction and collaboration.
+					</p>
+					<p>
+						From a technical point of view, since developers are required to view each other’s code it can force developers to present their code in a standard format i.e. indention, clear variable names, etc. This will make the maintainability of the code much easier, even if it is a different developer who has to work with the code down the line.  
+					</p>
+					<p>
+						Furthermore reviews will have an impact on maintainability of software. The very nature of a review process requires the technical aspects of the project to be scrutinised and therefore needs to be understandable for the inspectors. For the software to be understandable, there needs to be well  documented. The key benefit here is that developers will need to incrementally add documentation that is necessary for a review, which might not otherwise have been created. The review process will also help the developers general understanding of how the system  operates. While documentation doesn’t necessarily translate to an easy to maintain software, it does at least contribute to it. 
+					</p>
+				</div>
+				<p><a href="#s4" class="intLink">Internal Link: Jump to Section 4</a></p>
+				<p><a href="#sTop" class="intLink">Internal Link: Back to Top</a></p>
+			</div>
+			
 		</div>
 	</div>
 

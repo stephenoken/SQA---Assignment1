@@ -4,6 +4,9 @@
 /*Variables*/
 @font-colour:#fff;
 @navbar-bk-colour:#0977bc;
+@s1-bk-colour: darken(#00ACEE,20%);
+@s1-font-colour:#543729;
+@s2-bk-colour: darken(#EF5734,20%);
 body{
 	font-family: 'Roboto', sans-serif;
 	line-height: 24px;
@@ -61,11 +64,19 @@ a{
 	left: 175px;
 }
 .s1{
-	height: 1200px;
+	height:1900px;
+	background:@s1-bk-colour;
+	
+}
+.s2{
+	color:@font-colour;
+	height:1900px;
+	background:@s2-bk-colour;
 }
 .section{
 	max-width: initial;
 	min-width: initial;
+	z-index: 0;
 }
 .panel-body{
 	color:#333;
@@ -77,7 +88,17 @@ a{
 .sticky {
     position: fixed;
     top: 75px;
+	overflow-y: auto;
+	-webkit-transition: top 0.3s; /* For Safari 3.1 to 6.0 */
+	transition: top 0.3s;
 }
-.overview{
+.rebalance-main-content{
+	bottom: 400px;
 	
+}
+.disappear{
+	display: none;
+}
+.list-balance{
+	margin-left:20px;
 }
