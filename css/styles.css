@@ -47,10 +47,15 @@ a:hover {
 .dropdown button:hover {
   background: #1783c7;
 }
-.spi-dropdown-menu {
+.s1-dropdown-menu {
   position: absolute;
   top: 50px;
   left: 175px;
+}
+.s2-dropdown-menu {
+  position: absolute;
+  top: 50px;
+  left: 350px;
 }
 .s1 {
   height: 1900px;

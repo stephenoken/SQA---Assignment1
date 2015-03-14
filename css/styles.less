@@ -7,6 +7,11 @@
 @s1-bk-colour: darken(#00ACEE,20%);
 @s1-font-colour:#543729;
 @s2-bk-colour: darken(#EF5734,20%);
+.dropdown-menu(@left){
+	position: absolute;
+	top: 50px;
+	left: @left;
+}
 body{
 	font-family: 'Roboto', sans-serif;
 	line-height: 24px;
@@ -58,10 +63,11 @@ a{
 		background: #1783c7;
 	}
 }
-.spi-dropdown-menu{
-	position: absolute;
-	top: 50px;
-	left: 175px;
+.s1-dropdown-menu{
+	.dropdown-menu(175px);
+}
+.s2-dropdown-menu{
+	.dropdown-menu(350px);
 }
 .s1{
 	height:1900px;
