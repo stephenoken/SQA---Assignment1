@@ -58,13 +58,19 @@ a:hover {
   left: 350px;
 }
 .s1 {
+  color: #ffffff;
   height: 1900px;
   background: #006288;
 }
 .s2 {
   color: #ffffff;
-  height: 1900px;
+  height: 1600px;
   background: #af2c0e;
+}
+.s3 {
+  color: #ffffff;
+  height: 1500px;
+  background: #175d17;
 }
 .section {
   max-width: initial;

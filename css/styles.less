@@ -5,12 +5,17 @@
 @font-colour:#fff;
 @navbar-bk-colour:#0977bc;
 @s1-bk-colour: darken(#00ACEE,20%);
-@s1-font-colour:#543729;
 @s2-bk-colour: darken(#EF5734,20%);
+@s3-bk-colour: darken(#2BAF2B,20%);
 .dropdown-menu(@left){
 	position: absolute;
 	top: 50px;
 	left: @left;
+}
+.section-body(@height, @background){
+	color:@font-colour;
+	height:@height;
+	background:@background;
 }
 body{
 	font-family: 'Roboto', sans-serif;
@@ -70,14 +75,13 @@ a{
 	.dropdown-menu(350px);
 }
 .s1{
-	height:1900px;
-	background:@s1-bk-colour;
-	
+	.section-body(1900px, @s1-bk-colour);
 }
 .s2{
-	color:@font-colour;
-	height:1900px;
-	background:@s2-bk-colour;
+	.section-body(1600px,@s2-bk-colour);
+}
+.s3{
+	.section-body(1500px,@s3-bk-colour);
 }
 .section{
 	max-width: initial;
