@@ -134,3 +134,17 @@ p a:hover {
 .panel-group a:hover {
   color: #04395b;
 }
+#overview-4 {
+  top: 30px;
+}
+#e-mail {
+  position: absolute;
+  top: 250px;
+  left: 45px;
+  color: #543729;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#e-mail a {
+  color: #543729;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
