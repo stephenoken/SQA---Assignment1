@@ -8,8 +8,12 @@
 @s2-bk-colour: darken(#EF5734,20%);
 @s3-bk-colour: darken(#2BAF2B,20%);
 @s4-bk-colour: darken(#FFCC2F,20%);
-.test{
-	color: darken(#2BAF2B,5%)
+.links(){
+	a{
+		&:hover{
+			color:darken(@navbar-bk-colour,20%);
+		}
+	}
 }
 .dropdown-menu(@left){
 	position: absolute;
@@ -27,17 +31,20 @@ body{
 	font-size:16px;
 }
 .title{
-	color:yellow;
+	position: relative;
+	left: 350px
 }
-.before{
-	
+.svg-spi{
+
 	display: block;
 	text-indent: -9999px;
-	width: 100px;
-	height: 82px;
-	background: url("../image/SPI-logo.svg");
-	background-size: 100px 82px;
-	
+	width: 1000px;
+	height: 600px;
+	background: url("../image/SPI-2.svg");
+	background-size: 1000px 700px;
+	position: relative;
+	bottom:200px;
+	right: 60px;
 }
 .inner{
 	width:1200px;
@@ -103,6 +110,7 @@ a{
 }
 .panel-body{
 	color:#333;
+	.links();
 }
 .row{
 	margin-right: initial;
@@ -128,10 +136,9 @@ a{
 .hide-chart{
 	display:none;
 }
-.panel-body,p{
-	a{
-		&:hover{
-			color:darken(@navbar-bk-colour,20%);
-		}
-	}
+p{
+	.links();
+}
+.panel-group{
+	.links();
 }

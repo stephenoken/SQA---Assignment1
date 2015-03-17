@@ -13,8 +13,7 @@
 <script	src="js/jquery.smint.js" type="text/javascript" ></script>
 <script	src="js/javascript.js" type="text/javascript" ></script>
 
-<!--<script type="text/javascript" src="https://www.google.com/jsapi"></script>-->
-
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
 	
 
@@ -25,7 +24,7 @@ $(document).ready( function() {
 });
 
 </script>
-<!--<script type="text/javascript">
+<script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
@@ -36,16 +35,42 @@ $(document).ready( function() {
 
         var options = {
 		  backgroundColor: "transparent", 	
-          title: 'My Daily Activities',
+          title: 'Schedule performance',
 		  legend: {textStyle:{color: "#fff",fontSize: 16}},
-		  titleTextStyle: {color: "#fff", fontSize: 30},  
+		  titleTextStyle: {color: "#fff", fontSize: 20},  
           pieHole: 0.4,
         };
-
+		
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
       }
-</script>-->
+	  
+</script>
+<script>
+	google.load("visualization", "1.1", {packages:["bar"]});
+	google.setOnLoadCallback(drawBarChart);
+	function drawBarChart(){
+		
+		var data = google.visualization.arrayToDataTable([
+		        ['Genre', 'Fantasy & Sci Fi', 'Romance', 'Mystery/Crime', 'General',
+		         'Western', 'Literature', { role: 'annotation' } ],
+		        ['2010', 10, 24, 20, 32, 18, 5, ''],
+		        ['2020', 16, 22, 23, 30, 16, 9, ''],
+		        ['2030', 28, 19, 29, 30, 12, 13, '']
+		      ]);
+
+		      var options = {
+		        width: 600,
+		        height: 400,
+		        legend: { position: 'top', maxLines: 3 },
+		        bar: { groupWidth: '75%' },
+		        isStacked: true,
+		      };
+	}
+    var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+    // Convert the Classic options to Material options.
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+</script>
 </head>
 <body>
 	<!--<core-component-page></core-component-page>-->
@@ -53,9 +78,7 @@ $(document).ready( function() {
 <div class="wrap ">
 	<div class="section sTop">
 		<div class="inner">
-			<h1 class="title">SPI | Reviews</h1>
-			<h2 class="subtitle">Feel free to use this as your starting template</h2>
-			<div class="before"></div>
+			<div class="svg-spi"></div>
 			
 		</div>
 	</div>
@@ -354,7 +377,7 @@ $(document).ready( function() {
 					</p>
 					<p>
 
-						These reviews will help uncover 60-100% of defects within a project. Not only will we be able to put into production software that simple works and on schedule, but, over time the costs  and time associated with maintaining that software will be much more economical. This is because the earlier that defects are detected, the cheaper they are to remove. And this could be 10-100 times cheaper. 
+						These reviews will help uncover 60-100% of defects within a project. Not only will we be able to put into production software that simply works and on schedule, but, over time the costs  and time associated with maintaining that software will be much more economical. This is because the earlier that defects are detected, the cheaper they are to remove. And this could be 10-100 times cheaper. 
 					</p>
 					<p>
 						Reviews are the most proactive form of tests, in that they uncover defects that would not otherwise be picked up by tests.
@@ -366,7 +389,7 @@ $(document).ready( function() {
 				<div class="s2-3">
 					<h2>Developers</h2>
 					<p>
-						By having developers review each others code, this can have an impact on morale. This impact can be either negative or positive. Therefore it is important that developers view reviews as an opportunity to gain visibility and recognition of their work as opposed to an intrusion of their workplace. Essentially we hope to create a situation where by the developers communicate more often with each other. The benefit here, is that we can develop a team mentality within the developers. Which will improve morale, work satisfaction and collaboration.
+						By having developers review each others code, this can have an impact on morale. This impact can be either negative or positive. Therefore it is important that developers view reviews as an opportunity to gain visibility and recognition of their work as opposed to an intrusion of their workplace. Essentially we hope to create a situation where by the developers communicate more often with each other. The benefit here, is that we can develop a team mentality amoung the developers. Which will improve morale, work satisfaction and collaboration.
 					</p>
 					<p>
 						From a technical point of view, since developers are required to view each other&#146;s code it can force developers to present their code in a standard format i.e. indention, clear variable names, etc. This will make the maintainability of the code much easier, even if it is a different developer who has to work with the code down the line.  
@@ -381,8 +404,6 @@ $(document).ready( function() {
 						Reviews can provide ample educational benefits. Having reviews will lead to a better understanding of the software by review participants that can be obtained by reading the documentation as well as the opportunity of acquiring additional technical skills by observing the works of others. As a result reviews can serve as an excellent training ground for junior developers to observe different approaches to software analysis, design, and implementation. Furthermore formal technical reviews  can help promote backup and continuity because a number of people become familiar with parts of the software that they may not have otherwise seen.
 					</p>
 				</div>
-				<p><a href="#s4" class="intLink">Internal Link: Jump to Section 4</a></p>
-				<p><a href="#sTop" class="intLink">Internal Link: Back to Top</a></p>
 			</div>
 			
 		</div>
@@ -392,11 +413,22 @@ $(document).ready( function() {
 
 	<div class="section s3">
 		<div class="inner">
+			<div id="overview-3" class="col-md-4">
+				<h3>Review Statistics </h3>
+				<div id="donutchart">
+				</div>
+				<p>
+					Reworking software account for approximately 50% of time used in developing and maintaining software.
+				</p>
+				<div id="top_x_div">
+					
+				</div>
+			</div>
 			<div id="main-body-3" class="col-md-7 pull-right">
 				<div class="s3-1">
 					<h1>Improvements to our Organisation</h1>
 					<p>
-						Implementing Formal Technical Reviews will greatly improve the quality of the software that is being developed here at HealthCare Solutions. By implementing reviews in throughout our development process, it will yield several key benefits that will improve how we develop our software.
+						Implementing Formal Technical Reviews will greatly improve the quality of the software that is being developed here at HealthCare Solutions. By implementing reviews throughout our development process, it will yield several key benefits that will improve how we develop our software.
 					</p>
 					<p>
 						One of the benefits that formal technical reviews have is that they provide quantifiable data about the progress of projects. For example the amount of time spent on each phase, and the number of defects of each type discovered. Reviews can also help produce qualitative data,like, the usefulness of the review meetings, and verifying if the requirements are are still in scope with the software being created. 
@@ -408,7 +440,7 @@ $(document).ready( function() {
 						Software development is complex and error-prone by nature, both in the development and maintenance of software. As a result defects will inevitably make  their way into the final product over time and the longer that time is, the more frequent defects emerge and the higher cost to remove them. 
 					</p>
 					<p>
-						Reviews will offer HealthCare Solutions greater flexibility over projects. This is because, reviews will allow the identification of deliverables with well defined entry and exit criteria and successful review of these deliverables will reveal the progress being made on a project that can be followed and managed more easily. This tracking will be beneficial for both in house project management, but also for our customers. 
+						Reviews will offer HealthCare Solutions greater flexibility over projects. This is because, reviews will allow the identification of deliverables with well defined entry and exit criteria, and successful review of these deliverables will reveal the progress being made on a project that can be followed and managed more easily. This tracking will be beneficial for both in house project management, but also for our customers. 
 							
 					</p>
 				</div>
@@ -482,7 +514,7 @@ $(document).ready( function() {
 				<div class="s4-1">
 					<h1>Implementation</h1>
 					<p>
-						There are many variations to perform technical reviews. The vast majority of these approaches involve a group meeting to asses the project. However, some variations do not require a review group meeting. The variation that I&#146;ll looking to implement is the Round Robin Review in which a developers work is circulated among reviewers in a round robin fashion for their comments. The variation assigns developers into particular roles.This logic is the same other initiatives that improve software quality, like agile development ,use. In technical reviews we will have a moderator, inspectors, an author, a reader, and a recorder.
+						There are many variations to perform technical reviews. The vast majority of these approaches involve a group meeting to asses the project. However, some variations do not require a review group meeting. The variation that I&#146;ll be looking to implement is the Round Robin Review in which a developers work is circulated among reviewers for their comments. This variation assigns developers into particular roles.This logic is the same other initiatives that improve software quality, like agile development ,use. In technical reviews we will have a moderator, inspectors, an author, a reader, and a recorder.
 					</p>
 				</div>
 				<div class="s4-2">
@@ -505,7 +537,7 @@ $(document).ready( function() {
 				</div>
 				<div class="s4-3">
 					<h2>
-						Walkthroughs
+						Review Process
 					</h2>
 					<p>
 						The first step in the technical review process is the walkthrough. Walkthroughs can be viewed as presentation reviews  in which a review participant, usually the author, narrates a description of the software and the remainder of the review group provides their feedback throughout the presentation. These are referred to as presentation reviews because the bulk of the feedback usually occurs for the material actually presented at the level it is presented. A limitation of these walkthroughs is that reviewers will find it hard to prepare for them, and as a result, walkthroughs may lead to disorganised and uncontrolled reviews. We must also bear in mind  that walkthroughs may be very stressful for the author of the software and it may help to assign the reader to present the work instead.
@@ -529,7 +561,7 @@ $(document).ready( function() {
 				<div class="s4-4">
 					<h2>Work Practices</h2>
 					<p>
-						Implementing the formal technical reviews there are several best practices that we should aim to implement for the most efficient, lightweight perched review that have been proven to be effective by scientific study and by SmartBear&#146;s extensive field experience.
+						Implementing the formal technical reviews there are several best practices that we should aim to implement for the most efficient and lightweight form of reviews that have been proven to be effective by scientific study and by SmartBear&#146;s extensive field experience.
 					</p>
 					<p>
 						Review fewer than 200-400 lines of code at a time. According to Cisco&#146;s code review study, code reviews are most effective when the inspector reviews fewer than 200-400 lines of code at a time.
