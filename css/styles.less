@@ -7,6 +7,10 @@
 @s1-bk-colour: darken(#00ACEE,20%);
 @s2-bk-colour: darken(#EF5734,20%);
 @s3-bk-colour: darken(#2BAF2B,20%);
+@s4-bk-colour: darken(#FFCC2F,20%);
+.test{
+	color: darken(#2BAF2B,5%)
+}
 .dropdown-menu(@left){
 	position: absolute;
 	top: 50px;
@@ -74,6 +78,12 @@ a{
 .s2-dropdown-menu{
 	.dropdown-menu(350px);
 }
+.s4-dropdown-menu{
+	.dropdown-menu(675px);
+}
+.s5-dropdown-menu{
+	.dropdown-menu(850px);
+}
 .s1{
 	.section-body(1900px, @s1-bk-colour);
 }
@@ -81,7 +91,10 @@ a{
 	.section-body(1600px,@s2-bk-colour);
 }
 .s3{
-	.section-body(1500px,@s3-bk-colour);
+	.section-body(700px,@s3-bk-colour);
+}
+.s4{
+	.section-body(2600px,@s4-bk-colour);
 }
 .section{
 	max-width: initial;
@@ -111,4 +124,14 @@ a{
 }
 .list-balance{
 	margin-left:20px;
+}
+.hide-chart{
+	display:none;
+}
+.panel-body,p{
+	a{
+		&:hover{
+			color:darken(@navbar-bk-colour,20%);
+		}
+	}
 }

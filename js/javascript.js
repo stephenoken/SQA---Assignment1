@@ -1,8 +1,10 @@
 $(document).ready(function () {
     var overview1 = $('#overview-1');
 	var overview2 = $('#overview-2');
+	var overview4 = $('#overview-4');
     var overviewOriginOffSet1Start = overview1.offset().top;
 	var overviewOriginOffSet2Start = overview2.offset().top -150;
+	var overviewOriginOffSet4Start = overview4.offset().top -150;
 
 
     function scroll() {
@@ -20,7 +22,14 @@ $(document).ready(function () {
 			 //$('#overview-2').removeClass('sticky');
 			 $('#overview-1').removeClass('disappear');
 		}
-
+		if($(window).scrollTop()>=overviewOriginOffSet4Start){
+			 $('#overview-4').addClass('sticky');
+		}else{
+			 $('#overview-4').removeClass('sticky');
+		}
+		/*if($(window).scrollTop()>=overviewOriginOffSet3Start){
+			$('#overview-3').removeClass('hide-chart');
+		}*/
     }
 
     document.onscroll = scroll;
