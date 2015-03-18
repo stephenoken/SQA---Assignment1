@@ -1,2 +1,2 @@
-If assignment.html appears with no styles, then you'll need to extract the entire folder to a sperate directory. 
+If assignment.html appears with no styles, then you'll need to extract the entire folder to a seperate directory. 
 The html file was only tested with browsers using the webkit rendering engines, like Chrome and Safari.
